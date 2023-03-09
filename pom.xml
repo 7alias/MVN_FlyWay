@@ -38,6 +38,7 @@
   </dependencies>
 
   <build>
+    <defaultGoal>baseline</defaultGoal>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -85,7 +86,7 @@
           <version>6.5.5</version>
           <configuration>
             <driver>org.postgresql.Driver</driver>
-            <url>jdbc:postgresql//localhost/FlyWay?autoReconnect=true;useUnicode=true;characterEncoding=UTF-8;connectionCollation=utf8_general_ci;characterSetResults=UTF-8</url>
+            <url>jdbc:postgresql//localhost:5433/FlyWay?autoReconnect=true;useUnicode=true;characterEncoding=UTF-8;connectionCollation=utf8_general_ci;characterSetResults=UTF-8</url>
             <user>flyway</user>
             <password>password</password>
           </configuration>
