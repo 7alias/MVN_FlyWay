@@ -8,7 +8,7 @@ public class DBConnectionSettings {
 
     public static DataSource getURL() throws SQLException {
         DataSource dataSource = null;
-        dataSource.getConnection("postgres","postgres");
+        dataSource.getConnection("flyway","password");
         return dataSource;
     }
 }
