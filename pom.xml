@@ -90,8 +90,9 @@
       <version>6.5.5</version>
       <configuration>
         <url>jdbc:postgresql://localhost:5433/FlyWay?autoReconnect=true;useUnicode=true;characterEncoding=UTF-8;connectionCollation=utf8_general_ci;characterSetResults=UTF-8</url>
-        <user>flyway</user>
-        <password>password</password>
+          <configFiles>
+            <configFile>flyway.properties</configFile>
+          </configFiles>
       </configuration>
     </plugin>
     </plugins>
